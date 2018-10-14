@@ -1,0 +1,37 @@
+{
+  "name": "js-error-remote-logger",
+  "version": "0.0.1",
+  "description": "Provides remote logging for JS errors from user's browser by sending a post request to developer specified api endpoint.",
+  "scripts": {
+    "test": "eslint Static/src && jest --coverage",
+    "test:eslint": "eslint src",
+    "test:jest": "jest --coverage",
+    "build": "babel src/jserl.js --out-dir dist && uglifyjs dist/jserl.js -o dist/jserl.min.js -c -m --ie8"
+  },
+  "keywords": [
+    "javascript",
+    "errorhandling",
+    "report",
+    "log",
+    "errorlogging",
+    "remotelogging",
+    "errorreporting",
+    "exceptionhandling",
+    "exceptions"
+  ],
+  "main": "src/jserl.js",
+  "author": "Tufan Tunç <https://github.com/tufantunc>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
+    "uglify-js": "^3.4.9"
+  }
+}
