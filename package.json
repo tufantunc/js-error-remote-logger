@@ -6,7 +6,7 @@
     "test": "eslint Static/src && jest --coverage",
     "test:eslint": "eslint src",
     "test:jest": "jest --coverage",
-    "build": "babel src/jserl.js --out-dir dist && uglifyjs dist/jserl.js -o dist/jserl.min.js -c -m --ie8"
+    "build": "babel src/jserl.js --out-dir dist && uglifyjs dist/jserl.js -o dist/jserl.min.js -c -m"
   },
   "keywords": [
     "javascript",

@@ -16,8 +16,13 @@ const jserl = (() => {
     const createDetailedErrorObject = (errorEvent) => {
         const detailedErrorObject = {
             userAgent: navigator.userAgent || window.navigator.userAgent,
+            pageUrl: window.location.href,
             error: errorEvent,
             datetime: new Date().toString(),
+            userId: '',
+            sessionId: '',
+            appVersion: '',
+            customData: {},
         };
         return detailedErrorObject;
     };
